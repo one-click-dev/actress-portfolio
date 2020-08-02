@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document for Portfolio*/
+
+@font-face {
+    font-family: HeliosCondC; 
+    src: url('../font/HELIOSCONDC.OTF'), 
+		url('../font/HELIOSCONDC-BOLD.OTF'), 
+		url('../font/HELIOSCONDC-BOLDITALIC.OTF'),
+		url('../font/HELIOSCONDC-ITALIC.OTF'), 
+		url('../font/helioscondc-webfont.woff') format('woff'), 
+		url('../font/helioscondc-bold-webfont.woff') format('woff'),
+		url('../font/helioscondc-bolditalic-webfont.woff') format('woff'),
+		url('../font/helioscondc-italic-webfont.woff') format('woff'); 
+   }
+   div, input, textarea, select, button{
+    font-family: HeliosCondC;
+   }
+
+ /**********Navigation***********/ 
+
+.btn:focus{
+	box-shadow: 0 0 0 0;
+}
+
+.btn-group-lg>.btn, .btn-lg, .btn{
+	border-radius: 0;
+	background-color: transparent;
+	border-color: #fff;
+	min-width: 10rem;
+}
+
+.btn-play:hover{
+	background-color: #008080;
+	border-color: #008080;
+}
+
+.navbar{
+	align-items: flex-end;
+	z-index: 100;
+	right: 0;
+}
+
+.navbar-expand-md .navbar-collapse {
+	margin-top: 0.5rem;
+
+}
+
+.navbar-light .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 128, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar-light .navbar-toggler{
+	border-color: #008080;
+}
+
+.navbar-toggler{
+	border-radius: 0;
+}
+
+.scroll-spy {
+	position: relative;
+}
+
+.d-fixed{
+	position: fixed;			
+}
+
+.nav-pills .nav-link {
+	border-radius: 0;
+}
+
+a.nav-link, a.back-to-top{
+    background-color: #000;
+    color: #fff;
+	text-align: center;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 8rem;
+    right: 1rem;
+    display: none;
+	min-width: 5.43rem;
+	min-height: 2.5rem;
+	line-height: 2.5rem;
+}
+
+.fab{
+	font-size: 2rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link, a.back-to-top:hover{
+	background-color: #008080;
+}
+
+.video-slate{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	object-fit: cover;
+	z-index: 10;
+}
+
+.subheader-btn1{
+	position: absolute;
+	bottom: 30%;
+	left: 7%;
+	z-index: 20;
+}
+
+.subheader{
+	font-size: 300%;
+	margin-bottom: 1.25rem
+}
+
+ /**********Modal***********/ 
+
+.modal-dialog{
+	max-width: 800px;
+}
+
+.modal-content{
+	background-color: #000;
+}
+
+.modal-header, .modal-footer{
+	border: 0;
+}
+
+.close{
+	color: #fff;
+	opacity: 1;
+	text-shadow: none;
+	font-size: 3rem;
+	position: relative;
+	right: 50%;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover, .fab:hover{
+	color: #008080;
+	outline: none;
+	}
+
+.logo{
+	font-size: 200%;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	z-index: 30;
+}
+
+.logo:hover{
+	text-decoration: none;
+}
+
+/**********Resume***********/ 
+
+hr{
+	background:#008080;
+	width: 36px;
+    height: 4px;
+	display: inline-block;
+}
+
+.bold_bigger{
+	display: block;
+/*	background-color: beige;*/
+	font-size: 150%;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+.general-info{
+	background-image: linear-gradient(to right, #dee2e6 50%, #fff 50%);
+	padding: 5%;
+	margin:0;
+}
+
+.other-info{
+	padding-left: 5%;
+}
+
+.table td, .table th{
+	padding-left: 0;
+}
+
+.other-info td, div.other-info th{
+	padding: 0 2rem 0 0;
+}
+
+tr#no_border_top td{
+	border-top: none;
+}
+
+.btn-custom{
+	background-color: #000;
+	margin-left: 0.3125rem;
+}
+.btn-custom:hover{
+	background-color: #008080;
+}
+
+/**********Gallery + Lightbox***********/ 
+
+.headshot img{
+	width: 30%;
+}
+
+.headshot a{
+text-decoration: none;
+
+}
+
+.modal-body{
+	padding: 0;
+}
+
+.blockquote{
+	color:#dee2e6;
+}
+
+.mark, mark {
+	background-color: rgba(0, 128, 128, 0.25);
+	color: #fff;
+}
+
+/**********Contact***********/ 
+
+.form-control{
+	border-radius: 0;
+}
+
+.form-control:focus{
+	box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+	border-color: transparent;
+}
+
+textarea.message{
+	width: 100%;
+	height: 14rem;
+}
+
+/**********Footer***********/ 
+
+.page-footer{
+	background-color: #000;
+}
+
+.page-footer a{
+	color: #fff;
+}
+
+.page-footer a:hover{
+	color: #008080;
+	text-decoration: none;
+}
+
+/**********Breakpoints***********/ 
+
+@media (max-width: 1590px) {
+	.blockquote .display-3{
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 1133px) {
+	.headshot a img:nth-of-type(1){
+		margin-bottom: 1em;
+		}
+	.blockquote .display-3{
+		font-size: 2rem;
+	}
+	.blockquote .mt-5{
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 970px) {
+	.general-info{
+		background-image:none;
+		background-color: #dee2e6;
+		}
+	.blockquote .display-3{
+		font-size: 1.5rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.navbar-brand{
+		font-size: 100%;
+	}
+	.subheader{
+		font-size: 135%;
+		margin-bottom: 0;
+	}
+	.subheader-btn1{
+		bottom: 10%;
+		left: 10%;
+}
+	.bold_bigger{
+		font-size: 125%;
+	}
+}
+
